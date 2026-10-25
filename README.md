@@ -26,7 +26,7 @@
 
 - **SM2 zero-entropy key recovery** — private key from public key + second-level timestamp alone; 5 third-party chain SDKs, black-box, 3/3 reproduced ([demo](https://entropy.correctover.com/media/demo.cast))
 - **AWS official MCP sandbox escape** era (CVE-2026-115845): blacklist-style validation lost — runtime verification is the missing layer
-- 600-package weak-entropy watchlist: **163 flagged** incl. wallet SDKs at millions of monthly downloads
+- 600-package weak-entropy watchlist: **163 flagged** incl. wallet SDKs at millions of monthly downloads · Nov re-scan (correctover-scan v3.3.1): 100 top-traffic packages → 58 flagged, 59 critical files (ccxt, walletconnect stack, node-forge 150M/mo)
 
 ## Contact
 
