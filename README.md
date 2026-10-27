@@ -7,6 +7,18 @@
 [![npm: correctover-scan](https://img.shields.io/npm/v/correctover-scan)](https://www.npmjs.com/package/correctover-scan)
 [![PyPI: ccs-verifier](https://img.shields.io/pypi/v/ccs-verifier)](https://pypi.org/project/ccs-verifier/)
 
+## Core public implementations
+
+| Repo | What it does |
+|---|---|
+| [`correctover`](https://github.com/DSHCorrectover/correctover) | Runtime CCS verifier + guardrail provider for AI-agent tool calls (npm `correctover`) |
+| [`correctover-scan`](https://github.com/DSHCorrectover/correctover-scan) | Black-box CLI scanner — MCP/tool contracts, bundle analysis, weak-RNG rules (npm `correctover-scan`) |
+| [`independent-reader`](https://github.com/DSHCorrectover/independent-reader) | Verification re-implemented from scratch, zero shared code — the independent third party in "don't trust, verify" |
+| [`correctover-guard-reference`](https://github.com/DSHCorrectover/correctover-guard-reference) | Reference evidence-view guard: 400 public + 200 sealed holdout vectors, 95% intercept @ 0/200 FPR |
+| [`signed-receipt-reference`](https://github.com/DSHCorrectover/signed-receipt-reference) | Minimal JCS + Ed25519 signed receipt — the evidence format in one file |
+| [`code-birth-certificate`](https://github.com/DSHCorrectover/code-birth-certificate) | GitHub Action: Rekor-anchored code provenance with Zenodo DOI |
+
+
 ## Recognition & standards standing
 
 - **CVE-2026-73567 / GHSA-vh45-f885-3848** — credited independent reproduction: weak RNG seeding permitting private-key recovery in a widely deployed SM2 library; root cause corrected in the advisory per our findings. [Advisory](https://github.com/advisories/GHSA-vh45-f885-3848)
