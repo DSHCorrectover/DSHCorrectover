@@ -7,6 +7,17 @@
 [![npm: correctover-scan](https://img.shields.io/npm/v/correctover-scan)](https://www.npmjs.com/package/correctover-scan)
 [![PyPI: ccs-verifier](https://img.shields.io/pypi/v/ccs-verifier)](https://pypi.org/project/ccs-verifier/)
 
+## Recognition & standards standing
+
+- **CVE-2026-73567 / GHSA-vh45-f885-3848** — credited independent reproduction: weak RNG seeding permitting private-key recovery in a widely deployed SM2 library; root cause corrected in the advisory per our findings. [Advisory](https://github.com/advisories/GHSA-vh45-f885-3848)
+- **IETF individual submissions** — [draft-correctover-ccs](https://datatracker.ietf.org/doc/draft-correctover-ccs/) (rev 10) and [draft-correctover-gg-mcp-parameter-risk](https://datatracker.ietf.org/doc/draft-correctover-gg-mcp-parameter-risk/) (rev 01). Individual submissions; no IETF endorsement.
+- **SCITT / CPB interop evidence** — independent canonicalizer run against the registered `jcs` vectors in `draft-mih-sokolov-scitt-payload-binding`: byte-identical pre-image and digest, must-fail cases rejected. [Results](https://github.com/action-state-group/scitt-payload-binding/issues/109), with a CCS-receipt → CPB-Signed-Statement mapping in the same thread.
+- **SAMP (draft-efstathiou-samp-agent-management)** cites CCS as its example external evidence-verification binding (rev -04).
+- **W3C** public-agent-conformance community group participant.
+
+*Claims above are verifiable from the linked public records — consistent with our receipt-first policy.*
+
+
 ## What lives here
 
 | Tool | What it does | Verify it yourself |
