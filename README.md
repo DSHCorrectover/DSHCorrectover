@@ -21,7 +21,7 @@
 
 ## Recognition & standards standing
 
-- **CVE-2026-73567 / GHSA-vh45-f885-3848** — credited independent reproduction: weak RNG seeding permitting private-key recovery in a widely deployed SM2 library; root cause corrected in the advisory per our findings. [Advisory](https://github.com/advisories/GHSA-vh45-f885-3848)
+- **CVE-2026-73567 / GHSA-vh45-f885-3848** — our Node.js impact correction is incorporated in this advisory's public text (see the advisory's PoC section); we additionally demonstrated end-to-end private-key recovery from weak SM2 entropy across five production chains (evidence under NDA). [Advisory](https://github.com/advisories/GHSA-vh45-f885-3848)
 - **IETF individual submissions** — [draft-correctover-ccs](https://datatracker.ietf.org/doc/draft-correctover-ccs/) (rev 10) and [draft-correctover-gg-mcp-parameter-risk](https://datatracker.ietf.org/doc/draft-correctover-gg-mcp-parameter-risk/) (rev 01). Individual submissions; no IETF endorsement.
 - **SCITT / CPB interop evidence** — independent canonicalizer run against the registered `jcs` vectors in `draft-mih-sokolov-scitt-payload-binding`: byte-identical pre-image and digest, must-fail cases rejected. [Results](https://github.com/action-state-group/scitt-payload-binding/issues/109), with a CCS-receipt → CPB-Signed-Statement mapping in the same thread.
 - **SAMP (draft-efstathiou-samp-agent-management)** cites CCS as its example external evidence-verification binding (rev -04).
