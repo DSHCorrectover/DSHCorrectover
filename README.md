@@ -19,7 +19,7 @@ npx correctover-scan --demo
 |------|------|----------|
 | **[agent-runtime-guard](https://github.com/DSHCorrectover/agent-runtime-guard)** | Pre-execution MCP interceptor, Ed25519 receipts | Product |
 | **[correctover-scan](https://github.com/DSHCorrectover/correctover-scan)** | MCP / agent config scanner | Fast try |
-| **[mcp-atlas-census](https://github.com/DSHCorrectover/mcp-atlas-census)** | 42,163 servers · 229,827 tools (CC0) | Data |
+| **[m[mcp-atlas-census](https://github.com/DSHCorrectover/mcp-atlas-census)** | 42,163 servers · 229,827 tools (CC0) | Data |
 
 Compare layers: [COMPARE.md](https://github.com/DSHCorrectover/agent-runtime-guard/blob/main/COMPARE.md)
 
