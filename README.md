@@ -1,26 +1,48 @@
 # Correctover
 
-**Runtime verification & cryptographic evidence for AI agents and node infrastructure.**
-从「提示词劝导」到「密码学契约」——运行时七维验证 + Ed25519 签名收据（第三方离线可验）。
+**AI agent runtime security:** fail-closed tool-call interception + offline-verifiable Ed25519 evidence.
 
-## 我们在做什么（一条主线）
-- **CCS 运行时验证框架**：AI Agent 工具调用的七维运行时验证（Structure/Schema/Latency/Cost/Identity/Integrity/Security），fail-closed 默认
-- **密码学证据链**：每笔授权产出 Ed25519 over JCS（RFC 8785/8032）签名收据——执法/保险/审计可离线核验，无需信任我们的数据库
-- **守夜人服务**：矿池/验证节点的签名机安全审计 + 分布式节点契约验证（签名回执链）+ 链上状态突变监控
+```text
+Agent → Tool Call → [Guard] → Allow / Block → Signed Receipt
+```
 
-## 实证（可独立复核）
-- **GHSA-vh45-f885-3848**：独立复现并纠正 sm-crypto 弱熵死代码根因，维护者公开致谢
-- **[mcphub PR #1299](https://github.com/samanhappy/mcphub/pull/1299)**：高危工具调用前守卫（merged，6 commits/6 files）
-- **IETF 草案在案**：agent 运行时验证与签名收据设计（draft-correctover-ccs）
-- **弱熵武器库**：secp256k1 九算法（nonce 复用/biased nonce/Weak RNG 枚举），纯手写 ECC 引擎零依赖
+## Start here (30 seconds)
 
-## 工具链
-| 工具 | 用途 |
-|---|---|
-| mcp-atlas | 42,163 MCP servers / 229,827 tools 参数级普查（CC0） |
-| correctover-scan | MCP/Agent 契约与弱 RNG 风险 CLI 扫描器 |
-| ccs-verifier | Ed25519 收据离线验证器 |
+```bash
+npx -y agent-runtime-guard
+npx correctover-scan --demo
+```
 
-## 联系
-- 商务: wangguigui@correctover.com
-- IETF/W3C 标准线: 同邮箱（标题注明 [standards]）
+## Flagship repos
+
+| Repo | What | Why star |
+|------|------|----------|
+| **[agent-runtime-guard](https://github.com/DSHCorrectover/agent-runtime-guard)** | Pre-execution MCP interceptor, Ed25519 receipts | Product |
+| **[correctover-scan](https://github.com/DSHCorrectover/correctover-scan)** | MCP / agent config scanner | Fast try |
+| **[mcp-atlas-census](https://github.com/DSHCorrectover/mcp-atlas-census)** | 42,163 servers · 229,827 tools (CC0) | Data |
+
+Compare layers: [COMPARE.md](https://github.com/DSHCorrectover/agent-runtime-guard/blob/main/COMPARE.md)
+
+## Positioning
+
+| Layer | We | Others |
+|-------|----|--------|
+| Discovery / posture | — | Reco / Pluto class |
+| Config scan | correctover-scan | many scanners |
+| **Runtime tool-call block** | **agent-runtime-guard** | HOL Guard class |
+| Egress proxy | complement | Pipelock class |
+
+We answer: **can this tool call execute now, with a receipt?**  
+Not: full SaaS agent inventory.
+
+## Standard
+
+- [draft-correctover-ccs](https://datatracker.ietf.org/doc/draft-correctover-ccs/) — personal Internet-Draft (not an RFC)
+
+## Contact
+
+wangguigui@correctover.com · [SkillPay audit](https://skillpay.alipay.com/public/correctover)
+
+---
+
+**中文：** 执行前 fail-closed 拦截 + 可离线验证收据。国内网络不稳时，优先用 GitHub + `npx` 入口。
