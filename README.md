@@ -19,7 +19,7 @@ npx correctover-scan --demo
 |------|------|----------|
 | **[agent-runtime-guard](https://github.com/DSHCorrectover/agent-runtime-guard)** | Pre-execution MCP interceptor, Ed25519 receipts | Product |
 | **[correctover-scan](https://github.com/DSHCorrectover/correctover-scan)** | MCP / agent config scanner | Fast try |
-| **[m[mcp-atlas-census](https://github.com/DSHCorrectover/mcp-atlas-census)** | 42,163 servers · 229,827 tools (CC0) | Data |
+| **[mcp-atlas-census](https://github.com/DSHCorrectover/mcp-atlas-census)** | 42,163 servers · 229,827 tools (CC0) | Data |
 
 Compare layers: [COMPARE.md](https://github.com/DSHCorrectover/agent-runtime-guard/blob/main/COMPARE.md)
 
@@ -34,6 +34,23 @@ Compare layers: [COMPARE.md](https://github.com/DSHCorrectover/agent-runtime-gua
 
 We answer: **can this tool call execute now, with a receipt?**  
 Not: full SaaS agent inventory.
+
+## Commercial (monetization)
+
+Free tools generate qualified pipeline. Paid work is the business.
+
+| Offering | Public anchor (USD) |
+|----------|---------------------|
+| Runtime Guard + Scan (open tools) | **Free** |
+| Standard human audit (CCS-mapped) | **$2,500** |
+| Deep audit + PoC + remediation | **$8,000+** |
+| Private deploy / integration | **$5,000** |
+| Annual retainer | **$25,000/yr** |
+
+Public numbers are anchors only. Formal quote requires written scoping (async email). 1:1 commercial quotes follow internal PRICE-CARD (higher-ticket tracks). Zero phone. Payment details only after signed scope.
+
+**Contact:** wangguigui@correctover.com  
+Subject: `CCS audit scoping — [your stack]`
 
 ## Standard
 
