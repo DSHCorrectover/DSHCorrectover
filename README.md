@@ -63,3 +63,14 @@ wangguigui@correctover.com · [SkillPay audit](https://skillpay.alipay.com/publi
 ---
 
 **中文：** 执行前 fail-closed 拦截 + 可离线验证收据。国内网络不稳时，优先用 GitHub + `npx` 入口。
+
+## Independent authorization audits (commercial)
+
+MCP migration vendors prove you can handshake. **We certify you didn't go naked after migration** — five binding checks, two independently written verifiers, zero-disagreement requirement, court-ready dossier.
+
+| | |
+|---|---|
+| Tiers & free sample | [dshcorrectover.github.io/correctover-recovery-admission/services.html](https://dshcorrectover.github.io/correctover-recovery-admission/services.html) |
+| Engagement | USD 8,000–15,000 (T1 bounded review) |
+| Self-service payment | USDC on Base → `0xfF5EB80DF3Bf4506cd2d0CCC3c8303e1ee267459`, email tx hash to wangguigui@correctover.com |
+| Small items (verification pass, $1.99) | same address; on-chain reconciliation, report ships ≤24h |
